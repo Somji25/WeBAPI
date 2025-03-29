@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesTemp.css">
+    <title>Temperature Log Form</title>
+</head>
+<body>
+<header>
+    <a class="logo" href="./Main.html"></a>
+    <nav class="navigater">
+        <a href="./ViewConfig.html">Page 1</a>
+        <a href="./Temperature_Log_Form.html">Page 2</a>
+        <a href="./View_Logs.html">Page 3</a>
+    </nav>
+</header>
+
+<h1>Temperature Log Form</h1>
+
+<div class="page">
+    <div id="temperatureFormContainer">
+        <form id="temperatureForm">
+            <h1>Input Temperature</h1>
+            <h2>--------------------</h2>
+            <h2>---------------------------</h2>
+            <h2>------------------------</h2>
+            <label for="temperature">Temperature (°C):<img src="./pencil.png" alt="Pencil" class="pencil-icon"></label>
+            <input type="number" id="temperature" name="temperature" required />
+            <div id="message" class="message"></div>
+            <h2>---------------------------</h2>
+            <h2>-------------------------</h2>
+            <h2>---------------------------</h2>
+            <h2>----------------------</h2>
+        </form>
+        <div class="pagetotal"></div>
+        <div class="next-button">
+            <a href="./View_Logs.html">
+                <button type="button">Next</button>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="./temperature.js"></script>
+
+</body>
+</html>

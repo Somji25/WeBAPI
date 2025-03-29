@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #151f28;
+    flex-direction: column;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 28px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+    background: #1f2d39;
+    border-radius: 15px;
+}
+
+.navigater a {
+    position: relative;
+    font-weight: 600;
+    margin-left: 85px;
+    color: rgb(241, 241, 241);
+    font-size: 1.125em;
+    text-decoration: none;
+}
+
+.navigater a:hover {
+    color: rgb(237, 235, 229);
+    font-size: 1.25em;
+    transition: all 0.5s ease;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    background-image: url('./home.png');
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s ease;
+}
+
+.logo:hover {
+    background-color: white;
+    background-image: url('./new_home.png');
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+    transition: all 0.8s ease;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.9em;
+    font-weight: 700;
+    color: #3d2f02;
+    font-family: Poppins, sans-serif;
+}
+p{
+    color: #db9f12;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+#temperatureForm {
+    width:100%;
+    margin-top: 30px;
+}
+
+#temperatureForm label,
+#temperatureForm input {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+#temperatureForm input {
+    padding: 10px;
+    font-size: 1em;
+    width: 100%;
+}
+
+button {
+    padding: 15px 28px;
+    font-size: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.page {
+    margin-top: 120px;
+    position: absolute;
+    width: 550px;
+    height: 650px;
+    border: 5px solid #ededed;
+    background: #ededed;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagetotal {
+    content: "";
+    position: absolute;
+    right: -50px;
+    top: -20px;
+    width: 600px;
+    height: 680px;
+    border: 5px solid none;
+    background: #ba9b52;
+    border-radius: 10px;
+    z-index: -3;
+}
+
+.page::before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: -4px;
+    width: 565px;
+    height: 650px;
+    background: #bdbaba;
+    border-radius: 10px;
+    z-index: -2;
+}
+
+.page::after {
+    content: "";
+    position: absolute;
+    right: -30px;
+    top: -4px;
+    width: 565px;
+    height: 650px;
+    background: #b1aeae;
+    border-radius: 10px;
+    z-index: -3;
+}
+
+.Next_buttom button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Next_buttom button:hover {
+    background-color: #45a049;
+}
+
+.pencil-icon {
+    width: 35px;
+    height: 35px;
+}
