@@ -40,7 +40,7 @@ document.getElementById("temperatureForm").addEventListener("submit", function(e
     localStorage.setItem('allLogs', JSON.stringify(allLogs));
 
 
-    fetch('http://127.0.0.1:3000/logs', { 
+    fetch('https://web-api-shxv.onrender.com/logs', { 
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
