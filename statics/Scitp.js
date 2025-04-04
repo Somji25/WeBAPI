@@ -1,6 +1,6 @@
 
 function getDroneConfig() {
-  fetch('http://127.0.0.1:3000/drone-config')
+  fetch('https://web-api-shxv.onrender.com/drone-config')
     .then(response => response.json())
     .then(data => {
       localStorage.setItem('droneId', data.drone_id);
